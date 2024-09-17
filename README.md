@@ -46,23 +46,32 @@ Now you can see **WxPCATargetRuntimeClient** package in the packages list.
 24. Click **Add resource** button.
     * Provide **Path** value as **/execute**.
     * Select **HTTP Method** as **POST**.
-    * In **Select Workflow/Flow service** dropdown, choose **Execute_Action** workflow.
+    * In **Select Workflow/Flow service** dropdown, choose **Execute Action** workflow.
     * Click **Done** button and then click **Save** button.
 
 ## Cloud Runtime Compatibility
 For Cloud Runtime, no additional changes required in the workflow or flowservice imported. You can proceed to [this section](https://github.com/IBM/WxPCATargetRuntimeClient/tree/main?tab=readme-ov-file#get-url-to-configure-target-runtime-in-wxpackagecompatibilityanalyzer).
 
 ## Edge Runtime Compatibility
-For Edge Runtime, you need to select your **Integration/Edge Runtime** in the workflow. Follow the below steps:
+For Edge Runtime, you need to sync **executeAction** flow service to your **Edge Runtime** and select it in the **Execute Action** workflow.
 
-23. Select **Integrations** tab in webMethods.io Integration project.
-24. Select the **Workflows** tab in the left-hand side navigation.
-25. Open the **Execute_Action** workflow in **Edit** mode.
-26. Hover over **Invoke executeAction Flowservice** step and click on **Settings** icon.
-27. Under **Select Integration Runtime** dropdown, select your Integration/Edge Runtime against which you want to check the compatibility.
-28. Click **Next** button.
-29. Click **Next** button.
-30. On **Test this action** page, make sure **"The runtime Your_Runtime_Name is up to date"** message is displayed at the left side of "Sync" and "Test" button. If not,
+#### Sync the flow-service to Edge Runtime
+25. Select **Integrations** tab in webMethods.io Integration project.
+26. Select the **Flow Services** tab in the left-hand side navigation.
+27. Click on **executeAction** flowservice to open it.
+28. Select your edge runtime from the **Search Runtime** dropdown available on the Flow Editor menu bar.
+29. Click on **Sync** button (located next to "Search Runtime" dropdown) to synchronize all assets in the project with the selected edge runtime.
+30. On **Success** message exit from the flow service.
+
+#### Select the Edge Runtime in workflow
+31. Select **Integrations** tab in webMethods.io Integration project.
+32. Select the **Workflows** tab in the left-hand side navigation.
+33. Open the **Execute Action** workflow in **Edit** mode.
+34. Hover over **Invoke executeAction Flowservice** action and click on **Settings** icon.
+35. Under **Select Integration Runtime** dropdown, select your Edge Runtime against which you want to check the compatibility.
+36. Click **Next** button.
+37. Click **Next** button.
+38. On **Test this action** page, make sure **"The runtime Your_Runtime_Name is up to date"** message is displayed in the left side of "Sync" and "Test" button. If not,
     * click on **Sync** button.
     * On "Successfully synced" message, click **Close** button.
 31. Click **Test** button.
