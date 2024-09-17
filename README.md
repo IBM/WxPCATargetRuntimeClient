@@ -27,21 +27,23 @@ Now you can see **WxPCATargetRuntimeClient** package in the packages list.
 11. Select **Flow Services** tab in the left-hand side navigation.
 12. Click **Import** button.
 13. Choose **executeAction.zip** file and click **Open** button.
+14. Click **Submit** button.
 
 ### Import Workflows
-14. Download **Execute_Action.zip** files from the **Releases** section of this GitHub repository.
-15. Select the **Workflows** tab in the left-hand side navigation in webMethods.io Integration project.
-16. Click **Import** button.
-17. Choose **Execute_Action.zip** file and click **Open** button.
+15. Download **Execute_Action.zip** files from the **Releases** section of this GitHub repository.
+16. Select the **Workflows** tab in the left-hand side navigation in webMethods.io Integration project.
+17. Click **Import** button.
+18. Choose **Execute_Action.zip** file and click **Open** button.
+19. Click **Import** button.
 
 ### Configure API
-18. Select the **APIs** tab.
-19. Click on **Create API** button.
-20. Select **Create from Scratch / Design new API** and click **Next** button.
+20. Select the **APIs** tab.
+21. Click on **Create API** button.
+22. Select **Create from Scratch / Design new API** and click **Next** button.
     * Provide a **Name**. Example: **WxPCATargetRuntimeClient**.
     * Provide a **Version**. Example: **1.0**.
-21. Click **Save** button.
-22. Click **Add resource** button.
+23. Click **Save** button.
+24. Click **Add resource** button.
     * Provide **Path** value as **/execute**.
     * Select **HTTP Method** as **POST**.
     * In **Select Workflow/Flow service** dropdown, choose **Execute_Action** workflow.
