@@ -72,10 +72,10 @@ For Edge Runtime, you need to sync **executeAction** flow service to your **Edge
 36. Click **Next** button.
 37. Click **Next** button.
 38. On **Test this action** page, make sure **"The runtime Your_Runtime_Name is up to date"** message is displayed in the left side of "Sync" and "Test" button. If not,
-    * click on **Sync** button.
+    * Click on **Sync** button.
     * On "Successfully synced" message, click **Close** button.
 31. Click **Test** button.
-32. Click **Done** button after successful response.
+32. Click **Done** button after output displayed successfuly.
 33. Click on **Save** button at the top-right corner to save the workflow.
 
 ## Get URL to Configure Target Runtime in WxPackageCompatibilityAnalyzer
@@ -83,4 +83,4 @@ For Edge Runtime, you need to sync **executeAction** flow service to your **Edge
 2. In the **Projects** tab, open the project created earlier using the steps above.
 3. Select the **APIs** tab.
 4. Click on the API to open it.
-5. In the **Basic Info** section of the API, click the **Copy** icon for **Public URL** corresponding to **API Endpoint**. An example copied URL will be "https://somewmiotenant.int-aws-de.webmethods.io/integration/restv2/development/flec1bd19aa493d26689ccc0/WxPCACloudRuntimeClient".
+5. In the **Basic Info** section of the API, click the **Copy** icon for **Public URL** corresponding to **API Endpoint**. An example copied URL will be "https://somewmiotenant.int-aws-de.webmethods.io/integration/restv2/development/flec1bd19aa493d26689ccc0/WxPCATargetRuntimeClient".
