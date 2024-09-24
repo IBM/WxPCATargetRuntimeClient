@@ -62,7 +62,7 @@ proceed to [this section](https://github.com/IBM/WxPCATargetRuntimeClient/tree/m
 12. Click **Import** button.
 13. Choose **executeActionOnERT.zip** file and click **Open** button.
 
-#### Sync the Flow-service to Edge Runtime
+### Sync the Flow-service to Edge Runtime
 14. Click on **executeActionOnERT** flow service to open it.
 15. Click on **Expand All** button below flow service title.
 16. In **flow step 2**, click on **Cloud Runtime** and select your edge runtime from the **Search Runtime** dropdown.
