@@ -53,7 +53,7 @@ Follow these steps if you want to check compatibility against webMethods.io Inte
     * Click **Done** button and then click **Save** button.
       
 #### Get API URL
-25. Refer to [Get URL to Configure Target Runtime in WxPackageCompatibilityAnalyzer](https://github.com/IBM/WxPCATargetRuntimeClient/tree/main?tab=readme-ov-file#get-url-to-configure-target-runtime-in-wxpackagecompatibilityanalyzer) section below.
+25. Refer to [Get URL to Configure Target Runtime in WxPackageCompatibilityAnalyzer](README.md#get-url-to-configure-target-runtime-in-wxpackagecompatibilityanalyzer) section below.
 
 ### Target Runtime is webMethods Edge Runtime
 Follow these steps if you want to check compatibility against webMethods Edge Runtime.
@@ -87,7 +87,7 @@ Follow these steps if you want to check compatibility against webMethods Edge Ru
     * Click **Done** button and then click **Save** button.
 
 #### Get API URL
-25. Refer to [Get URL to Configure Target Runtime in WxPackageCompatibilityAnalyzer](https://github.com/IBM/WxPCATargetRuntimeClient/tree/main?tab=readme-ov-file#get-url-to-configure-target-runtime-in-wxpackagecompatibilityanalyzer) section below.
+25. Refer to [Get URL to Configure Target Runtime in WxPackageCompatibilityAnalyzer](README.md#get-url-to-configure-target-runtime-in-wxpackagecompatibilityanalyzer) section below.
 
 ## Get URL to Configure Target Runtime in WxPackageCompatibilityAnalyzer
 1. Login to the webMethods.io Integration tenant.
