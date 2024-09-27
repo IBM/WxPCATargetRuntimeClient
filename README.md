@@ -1,5 +1,5 @@
 # WxPCATargetRuntimeClient
-WxPCATargetRuntimeClient is webMethods Integration package for webMethods.io Integration to support [WxPackageCompatibilityAnalyzer](https://github.com/IBM/WxPackageCompatibilityAnalyzer.git) to analyze package dependencies against webMethods.io Integration Cloud runtime and webMethods Edge Runtime.
+WxPCATargetRuntimeClient is webMethods Integration package for webMethods.io Integration to support [WxPackageCompatibilityAnalyzer](https://github.com/IBM/WxPackageCompatibilityAnalyzer.git) to analyze package dependencies against webMethods.io Integration Cloud Runtime and webMethods Edge Runtime.
 
 **Pre-requisites**
 * webMethods.io Integration tenant
@@ -7,7 +7,7 @@ WxPCATargetRuntimeClient is webMethods Integration package for webMethods.io Int
 
 ## Installation & Configuration
 
-### Add WxPCATargetRuntimeClient package
+#### Add WxPCATargetRuntimeClient package
 1. Login to the webMethods.io Integration tenant.
 2. Select the **Projects** tab.
 3. Create a new project or select an existing project.
@@ -21,9 +21,10 @@ WxPCATargetRuntimeClient is webMethods Integration package for webMethods.io Int
 
 Now you can see **WxPCATargetRuntimeClient** package in the packages list.
 
-## Cloud Runtime Compatibility
+### Target Runtime is webMethods.io Integration Cloud Runtime
+Follow these steps if you want to check compatibility against webMethods.io Integration Cloud Runtime.
 
-### Import Flow-service
+#### Import Flow-service
 9. Download **executeActionOnCRT.zip** file from the **Releases** section of this GitHub repository.
 10. Select **Integrations** tab in webMethods.io Integration project.
 11. Select **Flow Services** tab in the left-hand side navigation.
@@ -31,14 +32,14 @@ Now you can see **WxPCATargetRuntimeClient** package in the packages list.
 13. Choose **executeActionOnCRT.zip** file and click **Open** button.
 14. Click **Submit** button.
 
-### Import Workflow
+#### Import Workflow
 15. Download **Execute_Action_on_CRT.zip** files from the **Releases** section of this GitHub repository.
 16. Select the **Workflows** tab in the left-hand side navigation in webMethods.io Integration project.
 17. Click **Import** button.
 18. Choose **Execute_Action_on_CRT.zip** file and click **Open** button.
 19. Click **Import** button.
 
-### Configure API
+#### Configure API
 20. Select the **APIs** tab.
 21. Click on **Create API** button.
 22. Select **Create from Scratch / Design new API** and click **Next** button.
@@ -50,19 +51,21 @@ Now you can see **WxPCATargetRuntimeClient** package in the packages list.
     * Select **HTTP Method** as **POST**.
     * In **Select Workflow/Flow service** dropdown, choose **Execute Action on CRT** workflow.
     * Click **Done** button and then click **Save** button.
+      
+#### Get API URL
+25. Refer to [Get URL to Configure Target Runtime in WxPackageCompatibilityAnalyzer](https://github.com/IBM/WxPCATargetRuntimeClient/tree/main?tab=readme-ov-file#get-url-to-configure-target-runtime-in-wxpackagecompatibilityanalyzer) section below.
 
-proceed to [this section](https://github.com/IBM/WxPCATargetRuntimeClient/tree/main?tab=readme-ov-file#get-url-to-configure-target-runtime-in-wxpackagecompatibilityanalyzer) to get URL to configure target runtime in WxPackageCompatibilityAnalyzer.
+### Target Runtime is webMethods Edge Runtime
+Follow these steps if you want to check compatibility against webMethods Edge Runtime.
 
-## Edge Runtime Compatibility
-
-### Import Flow-service
+#### Import Flow-service
 9. Download **executeActionOnERT.zip** file from the **Releases** section of this GitHub repository.
 10. Select **Integrations** tab in webMethods.io Integration project.
 11. Select **Flow Services** tab in the left-hand side navigation.
 12. Click **Import** button.
 13. Choose **executeActionOnERT.zip** file and click **Open** button.
 
-### Sync the Flow-service to Edge Runtime
+#### Sync the Flow-service to Edge Runtime
 14. Click on **executeActionOnERT** flow service to open it.
 15. Click on **Expand All** button below flow service title.
 16. In **flow step 2**, click on **Cloud Runtime** and select your edge runtime from the **Search Runtime** dropdown.
@@ -70,7 +73,7 @@ proceed to [this section](https://github.com/IBM/WxPCATargetRuntimeClient/tree/m
 18. On **Success** message, click on **Save** button.
 19. **Exit** from the executeActionOnERT flow service.
 
-### Configure API
+#### Configure API
 20. Select the **APIs** tab.
 21. Click on **Create API** button.
 22. Select **Create from Scratch / Design new API** and click **Next** button.
@@ -83,10 +86,12 @@ proceed to [this section](https://github.com/IBM/WxPCATargetRuntimeClient/tree/m
     * In **Select Workflow/Flow service** dropdown, choose **executeActionOnERT** flow service.
     * Click **Done** button and then click **Save** button.
 
+#### Get API URL
+25. Refer to [Get URL to Configure Target Runtime in WxPackageCompatibilityAnalyzer](https://github.com/IBM/WxPCATargetRuntimeClient/tree/main?tab=readme-ov-file#get-url-to-configure-target-runtime-in-wxpackagecompatibilityanalyzer) section below.
 
 ## Get URL to Configure Target Runtime in WxPackageCompatibilityAnalyzer
 1. Login to the webMethods.io Integration tenant.
 2. In the **Projects** tab, open the project created earlier using the steps above.
 3. Select the **APIs** tab.
 4. Click on the API to open it.
-5. In the **Basic Info** section of the API, click the **Copy** icon for **Public URL** corresponding to **API Endpoint**. An example copied URL will be "https://somewmiotenant.int-aws-de.webmethods.io/integration/restv2/development/flec1bd19aa493d26689ccc0/WxPCACloudRuntimeClient".
+5. In the **Basic Info** section of the API, click the **Copy** icon for **Public URL** corresponding to **API Endpoint**. Example: "https://somewmiotenant.int-aws-de.webmethods.io/integration/restv2/development/flec1bd19aa493d26689ccc0/WxPCACloudRuntimeClient".
